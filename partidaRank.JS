@@ -1,13 +1,13 @@
 
-function calcularRank(vitorias, derrotas) {
+    function calcularRank(vitorias, derrotas) {
     
-    //calculos
+//calculos
     let saldoVitorias = vitorias - derrotas;
     let nivel;
 
-    //determinando niveis com base nas vitorias
+//determinando niveis com base nas vitorias
     if (vitorias < 10) {
-            nivel = "ferro";
+        nivel = "ferro";
     } else if (vitorias >= 11 && vitorias <= 20) {
         nivel = "bronze";
     } else if (vitorias >= 21 && vitorias <= 50) {
@@ -22,11 +22,11 @@ function calcularRank(vitorias, derrotas) {
         nivel = "Imortal";
     }
 //msg
-return `O Heroi tem o saldo de ${saldoVitorias} e está no rank ${nivel}`;
+    return `O Heroi tem o saldo de ${saldoVitorias} e está no rank ${nivel}`;
 
 }
 
-    //ex
+//ex
     let vitorias = 87;
     let derrotas = 18;
-        console.log(calcularRank(vitorias, derrotas));
+    console.log(calcularRank(vitorias, derrotas));
